@@ -1,0 +1,73 @@
+package com.ivoi.vademecum
+
+import com.ivoi.Participant
+import com.ivoi.actions.ActionTable
+import com.ivoi.actions.PossibleAction
+import com.ivoi.messages.TextContent
+import com.ivoi.reactions.PossibleReaction
+import com.ivoi.reactions.ReactionTable
+
+val nome = Participant(
+    "Nome Cognome",
+    ActionTable(listOf(
+        PossibleAction(5, listOf(
+            TextContent("*Foto di montagna*\n", Topic.MONTAGNA),
+            TextContent("*Foto di montagna*\n", Topic.MONTAGNA),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("*Foto di un bicchiere di vino*", Topic.MANGIARE),
+            TextContent("*Foto di una fetta di pane*", Topic.MANGIARE),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("", Topic.MORTO),
+            TextContent("", Topic.MORTO),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("*Foto di una fica*\n", Topic.DONNA),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("", Topic.USCIRE),
+            TextContent("", Topic.USCIRE),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("", Topic.COMPLEANNO),
+            TextContent("", Topic.COMPLEANNO),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("", Topic.NOTIZIA),
+            TextContent("", Topic.NOTIZIA),
+        )),
+        PossibleAction(5, listOf(
+            TextContent("*Foto di noi in montagna*\n", Topic.AMARCORD),
+            TextContent("*Foto di noi in montagna*\n", Topic.AMARCORD),
+        )),
+    )),
+    ReactionTable(hashMapOf(
+        Topic.MONTAGNA to PossibleReaction(75, listOf(
+            TextContent(""),
+            TextContent(""),
+        )),
+        Topic.MANGIARE to PossibleReaction(75, listOf(
+            TextContent(""),
+            TextContent(""),
+        )),
+        Topic.MORTO to PossibleReaction(75, listOf(
+            TextContent(""),
+        )),
+        Topic.DONNA to PossibleReaction(75, listOf(
+            TextContent(""),
+            TextContent(""),
+        )),
+        Topic.USCIRE to PossibleReaction(75, listOf(
+            TextContent(""),
+            TextContent(""),
+        )),
+        Topic.COMPLEANNO to PossibleReaction(75, listOf(
+            TextContent(""),
+        )),
+        Topic.AMARCORD to PossibleReaction(75, listOf(
+            TextContent(""),
+            TextContent(""),
+        )),
+    ))
+)
