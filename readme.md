@@ -11,4 +11,4 @@ You need a JVM (8+) and kotlin. Then you can run the gradle wrapper.
 ## Notes
 
 I actually made a proper OO design for this one. You can find it in the root of the project, in 
-all its handwritten glory.
+all its handwritten glory. You can also [click here](https://github.com/spaoletti/iVoi/blob/master/iVoi-design.pdf).
